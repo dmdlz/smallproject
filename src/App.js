@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState(null);
 
   const fetchData = () => {
-    fetch('http://localhost:3001/web')
+    fetch('http://localhost:3000/web')
       .then(response => response.json())
       .then(data => {
         localStorage.setItem('webData', JSON.stringify(data));
